@@ -1,0 +1,148 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.span {
+  padding-inline: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  width: 600px;
+  height: 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+}
+
+.box-row-1 {
+  height: 110px;
+  width: 110px;
+  background-color: grey;
+  margin: 20px;
+  animation-name: SkewX;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.box-row-2 {
+  height: 110px;
+  width: 110px;
+  background-color: slategrey;
+  margin: 20px;
+  animation-name: SkewY;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+@keyframes SkewY {
+  0% {
+    transform: skewY(20deg);
+  }
+
+  100% {
+    transform: skewY(-20deg);
+  }
+}
+
+@keyframes SkewX {
+  0% {
+    transform: skewX(20deg);
+  }
+
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+.box-row-3 {
+  height: 110px;
+  width: 110px;
+  background-color: rgb(35, 105, 175);
+  margin: 20px;
+  animation-name: Rotate360;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes Rotate360 {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.box {
+  height: 110px;
+  width: 110px;
+  background-color: slategrey;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.first-box {
+    background-color: gray;
+  animation-name: Tranform-x;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+@keyframes Tranform-x {
+  100% {
+    transform: scaleY(0.3);
+  }
+}
+
+.secound-box {
+    background-color: red;
+  animation-name: Tranform-y;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+
+@keyframes Tranform-y{
+    100% {
+        transform: scaleX(0.3);
+      }
+}
+
+
+.last-box {
+    background-color: green;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+  }
+  
+  
+  @keyframes rotate{
+      100% {
+          transform: rotate(90deg);
+        }
+  }
